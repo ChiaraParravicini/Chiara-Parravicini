@@ -1,0 +1,453 @@
+body{
+	margin: 0px;
+	font-family: 'Libre Baskerville', serif;
+	word-spacing: 7px;
+	background-color: #f6d399;
+	text-align: justify;
+}
+/*HEADER*/
+	header{
+		background-color:black;
+		position: relative;
+	}
+	img.header{
+			   display: block;
+	  			max-width: 100%;
+				height: 200px;
+		  		margin-right: auto;
+		  		margin-left: auto;
+		  		padding: 10px;
+		  		margin-top: 0;
+		  		margin-bottom: 0;
+		  		padding: 0;
+		  		width: 100%;
+ 				 height: auto;
+
+	}
+	.btn {
+	  position: absolute;
+	  top: 85%;
+	  left: 96%;
+	  transform: translate(-50%, -50%);
+	  -ms-transform: translate(-50%, -50%);
+	  background-color: #f6d399;
+	  color: black;
+	  font-size: 12px;
+	  padding: 6px 12px;
+	  border: none;
+	  cursor: pointer;
+	  border-radius: 5px;
+	}
+	.en:link {
+		font-family: 'Libre Baskerville', serif;
+		word-spacing: 7px;
+		color: red;
+  		text-decoration: none;
+	}
+	.it:link {
+		font-family: 'Libre Baskerville', serif;
+		word-spacing: 7px;
+		color: red;
+  		text-decoration: none;
+	}
+/*NAVBAR*/
+/*rosino per dettagli: #db636f*/
+	ul{
+		width: 100%;
+		background-color: #730A13;
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-column-gap: 0px;
+		border-bottom-style: solid;
+		border-top-style: solid;
+  		border-width: 2px;
+  		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		font-size: 25px;
+	}
+	.navigazione{
+				text-decoration: none;
+				font-family: 'Archivo Narrow', sans-serif;
+				font-size: 28px;
+				padding: 10px 135px;
+				color: #F2F2F2;
+				letter-spacing: 2px;
+
+	}
+	.navbar{
+				padding: 10px;
+				margin-left: 0;
+				margin-right: 0;
+				text-align: center;
+				font-size: 25px;
+			}
+	.navbar:hover{
+		background-color: #D91414;
+	}
+
+	#attivo{
+		background-color:#D91414;
+		}
+
+	
+/*SCHERMO_IL_TESTO*/
+	.schermo_il_testo{
+		display: grid;
+		grid-template-columns: auto auto;
+	}
+
+	.tutti_pulsanti{
+		  padding-top: 40px;
+		  display: grid;
+		  grid-template-columns: auto;
+		  row-gap: 1px;
+		  padding-left: 40px;
+		  position: -webkit-sticky; /* Safari */
+		  position: sticky;
+		  top: 0;
+		  grid-row:1 / 16;
+		  width: 270px;
+		  height: 100px;
+
+
+	}
+/*PULSANTI*/
+	.pulsante{
+		font-family: 'Archivo Narrow', sans-serif;
+		font-size: 20px;
+		float: left;
+		padding: 5px;
+		color: #F2F2F2;
+		margin: 20px;
+		text-align: center;
+  		display: inline-block;
+		transition-duration: 0.4s;
+  		cursor: pointer;
+		background-color: #730A13;
+		width: 220px;
+		height: 50px;
+		position: sticky;
+		letter-spacing: 4px;
+		
+	}
+	.pulsante:hover{
+		background-color: #D91414;
+		color: #F2F2F2;
+	}
+	#primav{
+		background-color: 	#262626;
+	}
+	.attivo{
+		background-color: #D91414;
+	}
+/*BARRA DI RICERCA PERSONAGGI*/ 
+	/* Dropdown Button */
+
+		.dropbtn {
+		  background-color: #04AA6D;
+		  color: white;
+		  padding: 16px;
+		  font-size: 16px;
+		  border: none;
+		  cursor: pointer;
+		}
+
+	/* Dropdown button on hover & focus */
+		.dropbtn:hover, .dropbtn:focus {
+		  background-color: #3e8e41;
+		}
+
+	/* The search field */
+		#myInput {
+		  font-family: 'Archivo Narrow', sans-serif;
+		  letter-spacing: 2px;
+		  box-sizing: border-box;
+		  background-position: 14px 12px;
+		  background-repeat: no-repeat;
+		  font-size: 18px;
+		  padding: 12px 18px 10px 40px;
+		  border: none;
+		  border-bottom: 1px solid #ddd;
+		  margin-top: 70px;
+		  margin-left: 150px;
+		  }
+
+	/* The search field when it gets focus/clicked on */
+		#myInput:focus {
+			outline: 3px solid #ddd;
+		}
+
+	/* Dropdown Content (Hidden by Default) */
+		.dropdown-content {
+		  display: none;
+		  position: absolute;
+		  background-color: #f6f6f6;
+		  min-width: 258px;
+		  border: 1px solid #ddd;
+		  z-index: 1;
+		   margin-left: 150px;
+		  margin-bottom: 50px;
+		}
+
+	/* Links inside the dropdown */
+	.dropdown-content a {
+	  color: black;
+	  padding: 12px 16px;
+	  text-decoration: none;
+	  display: block;
+	  margin-left: 25px;
+	}
+
+	/* Change color of dropdown links on hover */
+	.dropdown-content a:hover {background-color: #f1f1f1}
+
+	/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+	.show {display:block;}
+
+/*Personaggi nascosti e visibili*/
+/*Tabella*/
+ .altro{
+	 	 width: 80%;
+	 	 margin: 25px 50px 75px 100px;
+	 	 padding-left: 50px;
+	 	 line-height: 200%;
+	 }
+	 .jolly{
+	 	 width: 80%;
+	 	 margin: 25px 50px 75px 100px;
+	 	 padding-left: 50px;
+	 	 line-height: 200%;
+
+	 }
+
+ /*tabella invisibile*/
+ 	.invisibile{
+ 		display: none;
+ 	}
+	 tr {
+	  padding: 10px;
+	  font-size: 20px;
+	 }
+	 td {
+	  padding: 10px;
+	  font-size: 20px;
+	  min-width: 200px;
+	}
+
+/*Testo*/
+	.autore{
+			display: none;
+
+	}
+	.autore_visibile{
+		font-family: 'Architects Daughter', cursive;
+		display: inline;
+		color: #00004d;
+	}
+	.riscrivere{
+		display: none;
+	}
+	.riscritto{
+		display: inline;
+		color:  #000066;
+	}
+	.cancellato{
+		text-decoration: line-through;
+		text-decoration-color:  #000066;
+	}
+	.duevis{
+
+	}
+	.dueinv{
+		display: none;
+	}
+	.trevis{
+
+	}
+	.treinv{
+		display: none;
+	}
+	.quattrovis{
+
+	}
+	.quattroinv{
+		display: none;
+	}
+	.tagliato{
+		text-decoration-line: line-through;
+		text-decoration-color: #000066;
+	}
+	.tagliatoquattro{
+		text-decoration-line: line-through;
+		text-decoration-color: #e65c00;
+	}
+	.sinistra{
+		text-align: left;
+	}
+/*FOOTER*/
+	footer{
+		background-color: black;
+		font-family: Archivio Narrow, sans-serif;
+		letter-spacing: 2px;
+		font-size: 14px;
+		color: white;
+		bottom: 0;
+		width: 100%;
+		float: left;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		position: relative;
+		margin-top: -0px;
+
+	}
+	.footer{
+		padding: 5px;
+		padding-left: 20px;
+	}
+	hr{
+		max-width: 300px;
+		margin-left: 20px;
+		padding: 0;
+	}
+	.progettazione {
+		color: #D91414;
+	}
+
+/*LINEA DEL TEMPO*/
+	
+	/* Timeline Container */
+	.timeline {
+	  margin: 20px auto;
+	  padding: 20px;
+	}
+
+	/* Outer Layer with the timeline border */
+	.outer {
+	  border-left: 2px solid #333;
+	}
+
+	/* Card container */
+	.card {
+	  position: relative;
+	  margin: 0 0 20px 20px;
+	  padding: 10px;
+	  background: #f6d399;
+
+	  max-width: 400px;
+	  font-family: 'Libre Baskerville', serif;
+
+	}
+
+	/* Information about the timeline */
+	.info {
+	  display: flex;
+	  flex-direction: column;
+	  gap: 10px;
+	}
+
+	/* Title of the card */
+	.title {
+	  color: orangered;
+	  position: relative;
+	}
+
+	/* Timeline dot  */
+	.title::before {
+	  content: "";
+	  position: absolute;
+	  width: 10px;
+	  height: 10px;
+	  background: white;
+	  border-radius: 999px;
+	  left: -39px;
+	  border: 3px solid black;
+	}
+	.mappa{
+		height: 400px;
+		width: 50%;
+	}
+.autore{
+	font-size: 30px;
+	margin: 30px;
+	padding: 30px;
+	text-align:center;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+.wall{
+	height: 50%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.schermo_autore{
+	display: grid;
+	grid-template-columns: auto auto;
+	margin-top: 30px;
+}
+.totale{
+	grid-column: 1 / span 2;
+}
+.mappa{
+	 position: -webkit-sticky; /* Safari */
+		  position: sticky;
+		  top: 50px;
+	margin-left: 30px;
+	width: 100%;
+	padding: 30px;
+	height: 600px;
+}
+.immagine_storia{
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  padding: 40px; 
+}
+.intervista{
+	margin-left: 20px;
+	margin-top: 15px;
+}
+
+.testo_storia{
+	padding: 40px 140px;
+	font-size:18px;
+	line-height: 200%; 
+}
+
+.bibliografia{
+	padding: 40px 140px;
+	font-size:18px;
+	line-height: 200%; 
+}

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="fogliodistile.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Libre+Baskerville&display=swap" rel="stylesheet">
+</head>
+</head>
+<body>
+	<!--HEADER-->
+	<header>
+		<img alt= "Foto di Pier Vittorio Tondelli" class="header" src="copertina.png">
+		<button class="btn"><a class="en" href=""> EN</a></button>
+	</header>
+	<!--NAVBAR-->
+	<ul>
+	  <li class="navbar"><a class= "navigazione" href="laStoria.html">LA STORIA</a></li>
+	  <li class="navbar"><a class= "navigazione" href="index.html">IL TESTO</a></li>
+	  <li class="navbar"><a class="navigazione" href="autore.html">L'AUTORE</a></li>
+	</ul>
+	<!-- PULSANTI-->
+	<div class="schermo_il_testo">
+		<div class="tutti_pulsanti">
+			<button class="pulsante">Prima versione</button>
+			<button class="pulsante" onclick="versionedue1(),versionedue2(),versionedue3(),versionedue4(),versionedue5(), mostra()">Seconda versione</button>
+			<button class="pulsante" onclick="versionetre1(),versionetre2(),versionetre3(),versionetre4(),versionetre5(), mostra()">Terza versione</button>
+			<button class="pulsante" onclick="versionequattro1(), versionetre2(), versionedue2(), nascondi()">Quarta versione</button>
+		</div>
+		<!--BARRA DI RICERCA-->
+		<div class="barra">
+			<div class="dropdown">
+			  <input type="text" placeholder="Personaggi.." id="myInput" onkeyup="filterFunction()" onclick="myFunction()">
+			    <div id="myDropdown" class="dropdown-content">
+			    <a href="#about">Personaggio 1</a>
+			    <a href="#base">Personaggio 2</a>
+			    <a href="#blog">Personaggio 3</a>
+			    <a href="#contact">Personaggio 4</a>
+			    <a href="#custom">Personaggio 5</a>
+			    <a href="#support">Personaggio 6</a>
+			    <a href="#tools">Personaggio 7</a>
+				</div>
+			</div>
+		</div>
+		<!--TESTO-->
+		<table class= "altro" id="myTable">
+	    	<tr>
+		     <td colspan="2">PRIMO ATTO INTRODUZIONE<br><br>
+		        È il tardo pomeriggio di domenica 11 luglio 1982. Siamo nel <span class = "cancellare">salone</span> <span class = "riscrivere"> soggiorno </span> di casa Oldofredi. 
+		        <span class="cancellare"> È un soggiorno molto “tropical” adorno di piante e di alcuni oggetti di alta tecnologia quali un potente impianto hi-fi, un personal computer, un videocitofono nascosto tra kenzie e palme. Naturalmente, trattandosi della tana di una generazione di trentenni o poco meno, alcuni oggetti metropolitani come, per esempio, un plastico in cartoncino dello skyline di Manhattan…Non si preciserà comunque la città in cui si trova questa casa. Si tratta di una qualsiasi città italiana. 
+		        </span>
+		        <span class = "riscrivere"> La tana di una generazione di trentenni</span>
+		          Il fondo del <span class = "cancellare">soggiorno</span> <span class = "riscrivere"> salone </span> è chiuso da una <span class = "cancellare"> vetrata scorrevole</span> <span class = "riscrivere"> veranda a vetrate scorrevoli </span>, oltre la quale si <span class = "cancellare">intravede</span> <span class = "riscrivere"> intravedrà </span> un’ampia terrazza <span class = "riscrivere"> con il tavolo preparato per il pranzo. </span> <span class = "cancellare"> Qui sta il tavolo preparato per il pranzo. </span> Quando inizia la rappresentazione, <span class = "riscrivere"> comunque, </span> il soggiorno è avvolto <span class = "cancellare">nell’oscurità</span> <span class = "riscrivere"> dall’oscurità. </span> Solo qualche raggio di luce filtra attraverso i <span class = "riscrivere">pesanti </span> tendaggi <span class = "cancellare">che chiudono la vetrata e l’accesso alla terrazza. </span> In un angolo sono Giulia e Alberto. Sudati, avvinghiati sotto l’inutile refrigerio di un ventilatore <span class = "riscrivere"> a pale </span> di tipo coloniale, si baciano, <span class = cancellare”> si mordono, </span> si scontrano, <span class = "cancellare">seminudi. </span> 
+		        </td>
+		    </tr> 
+			<tr>
+				<td colspan="2">
+					 <span class="corsivo"> Siamo sulla terrazza di casa Oldofredi. <span class="cancellare"> Anche qui la vegetazione è abbondante; sopra un paio di capitelli stanno i box dello stereo (in modo che si possa ballare). Al centro, il grande tavolo preparato per il pranzo.
+					Il secondo atto inizia riprendendo esattamente le ultime battute dell’atto precedente. I personaggi sono nella stessa posizione, però ora, li vediamo da dietro, in attesa che raggiungano la terrazza. </span> 
+					<span class= "riscrivere"> Sul fondo c’è la vetrata. La scena è come girata di centottanta gradi. Si riprende dal momento che ha chiuso l’atto precedente. Fra i convenevoli e le presentazioni, i personaggi salgono in terrazza. Didi e Giulia si siederanno un po’ più tardi entrando con la prima portata. 
+					Prenderanno posto in quest’ordine: FREDO – GIULIA – DIDI – MAVIE – ANNIE – ALBERTO – TOMMY. </span> </span>
+				</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<span class="cancellare"> <span class="corsivo"> (Suonano alla porta) </span> </span>
+				</td>
+			</tr>
+		</table>
+		<table class="jolly">
+		    <tr class="duevis treinv">
+		        <td> DIDI:
+		        </td> 
+		        <td >
+		        	<span class = "duevis"> L'hai voluto tu. "Scrittori italiani"! Non dici niente? "Registi stranieri!" Niente? Argomento "Sesso". Argomento "Abbronzatura" "Barba e capelli!" 
+					Ancora niente? "Danze", "Balli", "Teatro", "Feste", "Città", "Capitali", "Fiumi", "Monti", "Montagne", "Aerei", "Automobili"! Niente! Non dici niente perché non sai niente. Tu e tutte le 
+					tacchine che zompettano nei tuoi giornali, quelle cancerogene del cazzo.  Ma come fate a non capire? E' così semplice!  E' sulla bocca di tutti. Lo dicono anche le stracciacazzi che non 
+					esistono più le generazioni; tutto si consuma troppo in fretta. E' quello che dico anche io. Non esistono proprio le generazioni stratificate ogni venticinque, dieci o duevis anni. Sono 
+					delle spaccature verticali, degli abissi che fendono diacronicamente il tempo. Lo sforzo sta tutto nel non essere accomunati agli altri poichè nessuno che abbia meno di trent'anni è 
+					accomunabile a un altro. E' un coacervo di stili altrui, è il vertice, l'apoteosi dell'inautenticità, lo capisci questo? 
+					</span> 
+					<span class = "treinv"> <s> L'hai voluto tu. </s> <span style = "color:green"> Argomento arte contemporanea </span> Non dici niente? Scrittori italiani…Registi stranieri…Niente? Argomento sesso. Argomento abbronzatura: <span class 
+					style = "color:green"> integrale, alla lampada, sulle Alpi o sullo Ionio? </span>
+			</span>
+			</tr>
+			<tr class="treinv quattroinv"> 
+				<td> <span style= "color green" >MAVIE: </span></td> 
+				<td> Londra...Berlino </td> 
+			</tr> 
+		
+			<tr class="treinv quattroinv"> 
+				<td> DIDI: </td> 
+				<td> </span> Fiumi! Monti! Montagne! Aerei! Automobili! Niente! Non dici niente perché non sai niente. Te e tutte le tacchine che zompettano nei 
+		tuoi giornali <s> quelle cancerogene del cazzo </s> Ma come fate a non capire? <s> E' così semplice! </s> E' sulla bocca di tutti.<s> Lo dicono anche le stracciacazzi che </s> Non 
+		esistono più le generazioni; <span style = "color:green"> Tutto è compresente, </span> tutto si consuma troppo in fretta. E' quello che dico anche io. Non esistono proprio le generazioni 
+		stratificate ogni venticinque, dieci o <s> duevis </s> <span style = "color:green"> cinque </span> anni. <s> Sono </s> <span style = "color:green"> Solo </span> <s> delle </s> spaccature 
+		verticali. <s> degli abissi che fendono diacronicamente il tempo. Lo sforzo sta tutto nel non essere accomunati agli altri poichè nessuno che abbia meno di trent'anni è accomunabile a un 
+		altro. E' un coacervo di stili altrui, è il vertice, l'apoteosi dell'inautenticità </s> Lo capisci questo? </span> 
+		<span class = "quattroinv"> <s> Argomento arte contemporanea…Non dici niente? 
+		Scrittori italiani…Registi stranieri…Niente? Argomento sesso. Argomento abbronzatura: integrale, alla lampada, sulle Alpi o sullo Ionio? Barbe e capelli! Ancora niente? </s> <span style =
+		"color:orange"> Ah, allora sai qualcosa. Rispondi. </span> Danze, balli, teatro, feste, città, capitali. Capitali! </span>
+		</td>
+	</tr>
+		<tr class="treinv quattroinv"> 
+			<td> MAVIE: </td> <td> Londra...Berlino </td> 
+		</tr> 
+		<tr class="quattroinv"> 
+			<td> DIDI:
+		</td> 
+		<td> Fiumi, monti, <s> montagne, </s> aerei, autombili. <s> Niente! </s> <span style = "color:orange"> Paracadutisti! Minestre in scatola. Cioccolata. </span> Non dici niente perchè
+		non <span style = "color:orange"> ne </span> sai niente. Te e tutte le tacchine che zompettano <s> nel tuo giornale. </s> <span style = "color:orange"> nei tuoi giornali. </span> Ma come 
+		fate a non capire <s> ? </s> <span style = "color:orange"> . </span> <s> E’ sulla bocca di tutti. Non esistono più le generazioni. Tutto è compresente, tutto si consuma troppo in fretta. 
+		E’ quello che dico anche io. Non esistono proprio le generazioni stratificate ogni venticinque, dieci o cinque anni. Solo spaccature verticali. Lo capisci questo? </s> 
+	</span>		        </td>
+		    </tr>
+		    <tr>
+		        <td> MAVIE:
+		        </td>
+		        <td> Capisco che sei ubriaco.
+		        </td>
+		    </tr>
+		    <span class = "treinv"> <span style = "color:green"> <tr> <td> DIDI: </td> <td> Spaccature diacroniche. Che attraversano la storia. </td> </tr> <tr> <td> MAVIE: </td> <td> Dacci un taglio
+		</td> </tr> <tr> <td> DIDI: </td> <td> Ho molto più da spartire con Werther che con qualsiasi mio coetaneo. Capisci? </td> </tr> <tr> <td> MAVIE: </td> <td> Smetti di bere </td> </tr>
+		</span> </span> <span class = "quattroinv"> <s><tr> <td> DIDI: </td> <td> Spaccature diacroniche. Che attraversano la storia. </td> </tr> <tr> <td> MAVIE: </td> <td> Dacci un taglio
+		</td> </tr> <tr> <td> DIDI: </td> <td> Ho molto più da spartire con Werther che con qualsiasi mio coetaneo. Capisci? </td> </tr> <tr> <td> MAVIE: </td> <td> Smetti di bere </td> </tr>
+		</s> </span>
+		    <tr>  
+
+		        <td> DIDI:
+		        </td>
+		        <td><span class = "duevis"> Non sanno dire altro! Nient'altro...Sono un sentimentale, Mavie. </span> <span class = "treinv> Non sanno <s> dire </s> <span style = "color:green"> dirmi
+		</span> altro. Nient’altro…Sono un sentimentale Mavie. <span style = "color:green">  E l’alcol è il mio unico amore. </span> </span> <span class = "quattroinv"> Non sanno dirmi altro. 
+		<span style = "color:orange"> Non esco mai di casa. Si sa che le casalinghe bevono. </span> <s> Nient’altro…Sono un sentimentale Mavie. E l’alcol è il mio unico amore. </s> </span>
+		 
+
+
+		 
+		        </td>
+		    </tr>
+		    <tr>
+		        <td> MAVIE:
+		        </td>
+		        <td> <span class = "duevis"> E l'alcol è il tuo unico amore. Diceva così anche mia figlia, prima di diventare eroinomane. Poi lo diceva a proposito dell'eroina. E poi delle 
+		pasticche e di quelle porcherie lì. Voglio sperare che ora la tomba sia davvero il suo vero e unico amore. </span> <span class = "treinv"> <s> E l'alcol è il tuo unico amore. </s> 
+		Diceva così anche <s> mia figlia </s> <span style = "color:green"> mio figlio </span>, prima di <s> diventare </s> <span style = "color:green"> essere </span> eroinomane. Poi lo diceva a 
+		proposito <s> dell'eroina </s> <span style = "color:green"> della polvere. </span> E poi delle pasticche e <s> di quelle porcherie lì. </s> <span style = "color:green"> dio-sa-cosa. 
+		</span> <span style = "color:green"> <tr> <td> DIDI: </td> <td> Sul serio? </td> </tr> </span> Voglio sperare che <s> ora </s> la <span style = "color:green"> nostra </span> tomba <span
+		style = "color:green"> di famiglia </span> sia <s> davvero </s> <span style = "color:green"> finalmente </span> il suo unico e vero amore. </span> <span class = "quattroinv"> Diceva così 
+		anche mio figlio, prima di <span style = "color:orange"> farsi le canne </span>, poi lo diceva a proposito della polvere. E poi delle pasticche e <s> dio-sa-cosa </s> <span style = 
+		"color:orange"> delle fiale e di vattelapesca che cosa. Voglio sperare che nella nostra tomba di famiglia non crescano funghi 
+		allucinogeni. Troverebbe ancora il modo fi farseli.  </span> <s> <tr> <td> DIDI: </td> <td> Sul serio? </td> </tr> </s> 
+		</span>  
+		        </td>
+		    </tr>   
+		    <tr>
+		        <td> DIDI: 
+		        </td>
+		        <td> <span class = "treinv" >Mi spiace che...</span> <span class = "quattroinv"> Mi spiace, <s> che... </s> <span style = "color:orange"> Mavie... </span>
+		        </td>
+		    </tr>
+		    <tr>
+		        <td> MAVIE:
+		        </td>
+		        <td> <span class = "duevis"> Dacci un taglio e smetti di intossicarti!</span> <span class = "treinv"> <s> Dacci un taglio e smetti di intossicarti! </s> <span style = "color:green"> 
+		Fa caldo. E' sera ma fa caldo. </span> <span style = "color:green"> <tr> <td> DIDI: </td> <td> Vorresti ancora giocare con me…Restano migliaia di domande </td> </tr> </span> </span>  
+		<span class = "quattroinv"> <s> Fa caldo. E' sera ma fa caldo </s> <span style = "color:orange"> E’ ormai notte e fa ancora caldo. </span> <tr> <td> DIDI: </td> <td> <s> Vorresti ancora
+		giocare con me...Restano migliaia di domande <s> <span style = "color:orange"> Non giochi più con me? Ho altre domande </td> </tr> </span> </span> 
+		 
+		        
+		        </td>
+		    </tr>
+
+			
+		</table>
+		
+	</div>
+	<!--FOOTER-->
+	<footer>
+		<div class="footer"> Nicole Chiara Gaia Giorgia</div>
+		<hr>
+		<div class="footer"> 
+			PROJECT SHOLARLY EDITING <br>CREATION: FEBRUARY 2023<br><a href="progectmanagment.html" class="progettazione">Progettazione</a>
+		</div>
+	</footer>
+	<script>
+					/* When the user clicks on the button,
+			toggle between hiding and showing the dropdown content */
+			function myFunction() {
+			  document.getElementById("myDropdown").classList.toggle("show");
+			}
+
+			function filterFunction() {
+			  var input, filter, ul, li, a, i;
+			  input = document.getElementById("myInput");
+			  filter = input.value.toUpperCase();
+			  div = document.getElementById("myDropdown");
+			  a = div.getElementsByTagName("a");
+			  for (i = 0; i < a.length; i++) {
+			    txtValue = a[i].textContent || a[i].innerText;
+			    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+			      a[i].style.display = "";
+			    } else {
+			      a[i].style.display = "none";
+			    }
+			  }
+			}
+			function mostra(){
+				let elements = document.querySelectorAll('.invisibile');
+				if (elements.length > 0) {
+				  elements.forEach(function(element) {
+				    element.classList.remove('invisibile');
+				    element.classList.add('altro');
+				  });
+				}
+
+				}
+
+				function nascondi(){
+				let elements = document.querySelectorAll('.altro');
+				if (elements.length > 0) {
+				  elements.forEach(function(element) {
+				    element.classList.remove('altro');
+				    element.classList.add('invisibile');
+				  });
+				}
+
+				}
+
+			function versionetre1(){
+				const elements = document.querySelectorAll('.riscrivere');
+
+				for (let i = 0; i < elements.length; i++) {
+				  elements[i].classList.remove('riscrivere');
+				  elements[i].classList.add('riscritto');
+				}
+			}
+			function versionetre2(){
+				const elements = document.querySelectorAll('.duevis');
+
+				for (let i = 0; i < elements.length; i++) {
+				  elements[i].classList.remove('duevis');
+				  elements[i].classList.add('dueinv');
+				}
+			}
+			function versionetre3(){
+				const elements = document.querySelectorAll('.treinv');
+
+				for (let i = 0; i < elements.length; i++) {
+				  elements[i].classList.remove('treinv');
+				  elements[i].classList.add('trevis');
+				}
+			}
+			function versionetre4(){
+				const elements = document.querySelectorAll('.quattrovis');
+
+				for (let i = 0; i < elements.length; i++) {
+				  elements[i].classList.remove('quattrovis');
+				  elements[i].classList.add('quattroinv');
+				}
+			}
+
+			function versionetre5(){
+				const elements = document.querySelectorAll('.cancellare');
+
+				for (let i = 0; i < elements.length; i++) {
+				  elements[i].classList.remove('cancellare');
+				  elements[i].classList.add('cancellato');
+				}
+			}
+				
+
+				
+			function versionedue1(){			
+				
+				const elements = document.querySelectorAll('.duinv');
+
+				for (let i = 0; i < elements.length; i++) {
+				  elements[i].classList.remove('dueinv');
+				  elements[i].classList.add('duevis');
+				}
+			}
+			function versionedue2(){			
+				
+				const elements = document.querySelectorAll('.trevis');
+
+				for (let i = 0; i < elements.length; i++) {
+				  elements[i].classList.remove('trevis');
+				  elements[i].classList.add('treinv');
+				}
+			}
+			function versionedue3(){			
+				
+				const elements = document.querySelectorAll('.quattrovis');
+
+				for (let i = 0; i < elements.length; i++) {
+				  elements[i].classList.remove('quattrovis');
+				  elements[i].classList.add('quattroinv');
+				}
+			}
+			function versionedue4(){			
+				
+				const elements = document.querySelectorAll('.riscritto');
+
+				for (let i = 0; i < elements.length; i++) {
+				  elements[i].classList.remove('riscritto');
+				  elements[i].classList.add('riscrivere');
+				}
+			}
+			function versionedue5(){
+				const elements = document.querySelectorAll('.cancellato');
+
+				for (let i = 0; i < elements.length; i++) {
+				  elements[i].classList.remove('cancellato');
+				  elements[i].classList.add('cancellare');
+				}
+			}
+				
+	 		function versionequattro1(){			
+				
+				const elements = document.querySelectorAll('.quattroinv');
+
+				for (let i = 0; i < elements.length; i++) {
+				  elements[i].classList.remove('quattroinv');
+				  elements[i].classList.add('quattrovis');
+				}
+			}
+	</script>
+</body>
+</html>
